@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.DS_Store
+*.egg-info/
+node_modules/
+.agents/skills/*/scripts/update-state.json

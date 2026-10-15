@@ -1,0 +1,6 @@
+[project]
+name = "macro-lab"
+version = "0.1.0"
+description = "宏观指标、大类资产与建模的讨论与实验。"
+requires-python = ">=3.12,<3.13"
+dependencies = []

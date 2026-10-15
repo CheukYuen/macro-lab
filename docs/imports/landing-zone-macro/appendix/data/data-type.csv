@@ -1,0 +1,54 @@
+# Growth（经济增长）
+indicator_id,indicator_name,unit,adjustment,source,data_type
+GDP_REAL_YOY,中国:GDP:不变价:当季同比,%,YoY,NBS,Growth
+INDUSTRY_YOY,工业增加值:同比,%,YoY,NBS,Growth
+RETAIL_SALES_YOY,社会消费品零售总额,%,YoY,NBS,Growth
+
+# Sentiment（信心与景气）
+PMI_MANU,中国:PMI,,Level,NBS,Sentiment
+PMI_SERV,中国:非制造业PMI,,Level,NBS,Sentiment
+CONSUMER_CONFIDENCE,中国:消费者信心指数,,Level,NBS,Sentiment
+PMI_NEW_EXPORT_ORDERS,中国:PMI:新出口订单,,Level,NBS,Sentiment
+
+# Investment（投资）
+INFRA_INVEST_CUM_YOY,基础设施投资:累计同比,%,YoY,NBS,Investment
+MANU_INVEST_CUM_YOY,制造业投资:累计同比,%,YoY,NBS,Investment
+REAL_ESTATE_INVEST_CUM_YOY,房地产开发投资完成额:累计同比,%,YoY,NBS,Real_Estate
+
+# Real_Estate（房地产）
+RESID_HOUSE_SALES_CUM_YOY,商品房销售额(住宅),%,YoY,NBS,Real_Estate
+
+# Trade（贸易流量）
+EXPORT_AMOUNT_CNY_YOY,中国:出口金额:同比,%,YoY,GACC,Trade
+IMPORT_AMOUNT_CNY_YOY,中国:进口金额:同比,%,YoY,GACC,Trade
+
+# FX（汇率）
+FX_CNY_MID,中间价:美元兑人民币,USD/CNY,Level,PBOC,FX
+
+# Credit（货币与信用）
+M2_YOY,M2:同比,%,YoY,PBOC,Credit
+M1_YOY,中国:M1:同比,%,YoY,PBOC,Credit
+TSF_STOCK_YOY,社融存量:同比,%,YoY,PBOC,Credit
+
+# Rate（利率）
+DR007,DR007,%,Level,CFETS,Rate
+CREDIT_YTM_AA_3Y,AA级信用债收益率（3年）,%,Level,CHINA_BOND,Rate
+CGB_3Y_YTM,中债国债到期收益率:3年,%,Level,CHINA_BOND,Rate
+LPR_1Y,LPR:1年期,%,Level,CFETS,Rate
+
+# Labor（劳动力市场）
+URBAN_SURVEYED_UNEMPLOYMENT_RATE,城镇调查失业率,%,Level,NBS,Labor
+
+# Fiscal（财政政策）
+GOV_EXPEND_CUM_YOY,财政支出累计同比,%,YoY,MOF,Fiscal
+SPECIAL_BOND_PROGRESS,专项债执行进度,%,,Derived,Fiscal
+SPECIAL_BOND_ISSUE_CUM,中国:发行地方政府债券:按用途划分:发行新增专项债券:累计值,CNY_100M,,MOF,Fiscal
+
+# Inflation（通货膨胀）
+BRENT_CRUDE,期货收盘价(连续):ICE布油,USD/bbl,Level,ICE,Inflation
+CPI_YOY,CPI:同比,%,YoY,NBS,Inflation
+PPI_YOY,PPI:同比,%,YoY,NBS,Inflation
+
+# Risk_Sentiment（风险偏好）
+VIX,标准普尔500波动率指数(VIX),,Level,CBOE,Risk_Sentiment
+XAUUSD,期货收盘价(连续):COMEX黄金,USD/oz,Level,COMEX,Risk_Sentiment
