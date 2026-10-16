@@ -1,6 +1,20 @@
 {
   "version": 1,
   "skills": {
+    "macro_event_market_impact_skill": {
+      "source": "https://gitee.com/wind_info/wind-skills.git",
+      "sourceUrl": "https://gitee.com/wind_info/wind-skills.git",
+      "sourceType": "git",
+      "skillPath": "skills/macro_event_market_impact_skill/SKILL.md",
+      "computedHash": "6c3d63f915a9641b2146ca3aa867bd13a58bfbfb3cee392b1d44dbb77bad4459"
+    },
+    "wind-alice": {
+      "source": "https://gitee.com/wind_info/wind-skills.git",
+      "sourceUrl": "https://gitee.com/wind_info/wind-skills.git",
+      "sourceType": "git",
+      "skillPath": "skills/wind-alice/SKILL.md",
+      "computedHash": "1f49038037dcfeb032b712be7f49aefe49c94db4d6e65da61a7248b126e7c981"
+    },
     "wind-find-finance-skill": {
       "source": "Wind-Information-Co-Ltd/wind-skills",
       "sourceType": "github",
