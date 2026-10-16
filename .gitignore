@@ -6,3 +6,8 @@ __pycache__/
 *.egg-info/
 node_modules/
 .agents/skills/*/scripts/update-state.json
+
+# 实验运行：out/ 放渲染中间件与缓存，可重建，不入库
+experiments/**/runs/*/out/
+**/font-cache/
+.cache/

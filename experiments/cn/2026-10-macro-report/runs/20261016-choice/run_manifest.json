@@ -1,0 +1,37 @@
+{
+ "experiment": "cn/2026-10-macro-report",
+ "run_id": "20261016-choice",
+ "data_source": "choice",
+ "title": "2026年10月中国市场与外部宏观环境分析报告（Choice版）",
+ "information_cutoff": "2026-10-16 A股收盘",
+ "requested_skill": "macro_event_market_impact_skill",
+ "data_skill": "choice-quantapi-skill",
+ "status": "DONE_WITH_LIMITS",
+ "history": [
+  "wind-mcp-skill 首次调用返回 backend_error 积分不足（BLOCKED_QUOTA），未取到数据",
+  "Choice 首次批量查询中途返回 10001009 账号他处登录；用户要求重试，单次登录内完成全部取数"
+ ],
+ "fetch_script": "fetch_choice.py",
+ "raw": [
+  "raw/edb.json",
+  "raw/market_close.csv",
+  "raw/lookups.json",
+  "raw/DGS10.csv",
+  "raw/DGS2.csv",
+  "raw/DFF.csv"
+ ],
+ "choice_unavailable": {
+  "E1000174,EMM00588704,EMM00166466,E1300004": "edb 10000009 no data（与 invest-lab 2026-10-12 诊断一致）",
+  "EMM00597116,EMM00027220": "Choice 标注停止，未使用",
+  "US CPI/NFP/UST": "无已知 EDB 代码，secucode 无结果"
+ },
+ "findings": [
+  "EMM00183406/183407 为人民币口径（9月29.6%/24.6%与海关人民币口径一致）"
+ ],
+ "supplements": "FRED H.15（美债、联邦基金）；国家统计局、人民银行数据经媒体与官网转述；一致预期为发布后报道转述",
+ "scope": "未覆盖旧 docx 版；未写入 invest-lab 或 invest-sources；未提交 Git",
+ "output": "experiments/cn/2026-10-macro-report/reports/2026年10月中国市场与外部宏观环境分析报告-choice.md",
+ "sha256": "15b621da3b700d3766340dc8472dec64a3e900d1586938a50535c8f92d02e154",
+ "bytes": 15856,
+ "relocation": "2026-10-16 自 runs/2026-10-china-macro-report-choice/ 迁入；报告第 132 行的 raw 路径同步改写，sha256 为改写后的值（原值 49f73a65…4a52）"
+}

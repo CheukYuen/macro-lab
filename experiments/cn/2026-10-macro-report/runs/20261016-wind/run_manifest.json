@@ -1,0 +1,177 @@
+{
+  "experiment": "cn/2026-10-macro-report",
+  "run_id": "20261016-wind",
+  "data_source": "wind-mcp",
+  "title": "2026年10月中国市场与外部宏观环境分析报告",
+  "information_cutoff": "2026-10-16T15:30:00+08:00",
+  "market_comparison": [
+    "2026-09-30",
+    "2026-10-15"
+  ],
+  "requested_skill": "macro_event_market_impact_skill",
+  "data_skill": "wind-mcp-skill",
+  "workflow_role": "必需工作流 skill 已安装",
+  "data_role": "必需数据底座 skill 已安装",
+  "artifact_skill": "documents:documents",
+  "status": "DONE_WITH_LIMITS",
+  "source_storage": "本运行仅保存分析稿、请求定位与计算说明；未复制发布机构原文或改写invest-sources登记规则",
+  "requests": [
+    {
+      "ref": "W1",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "4797f56c6028c5f53d6e86bb27b7aff9",
+      "note": "PMI CPI PPI；沙箱内首次NETWORK_ERROR，获准联网后同参数成功"
+    },
+    {
+      "ref": "W3",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "66e0fce8e54aaa2b1945b08b9da6234b",
+      "note": "信用货币外贸；返回10指标上限提示，遗漏订单另补"
+    },
+    {
+      "ref": "W5",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "81684d2f5bebaa136b103e8d2017c4c8",
+      "note": "美国通胀就业政策及日度利率美元；未使用意外匹配CPI-W或概率指标"
+    },
+    {
+      "ref": "W2",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "405a3f2cb544e61a6a6d86a4eadd1bff",
+      "note": "订单分项；未返回核心CPI或CPI/PPI预测序列，核心结构据官方原文核验"
+    },
+    {
+      "ref": "W4/W4b",
+      "service": "financial_docs",
+      "tool": "get_financial_news",
+      "request_id": "fe99b5428f0cc1e42c0161f609c20c77",
+      "note": "CPI/PPI预测为发布后报道转述；PPI两种报道基线4.3与4.4均列明来源，不混作同样本"
+    },
+    {
+      "ref": "W10国内增长",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "d7289a148069fa17de4934547dad22a4",
+      "note": "GDP 工业 社零 投资；房地产行业固定投资M0000449口径不符，未采用，另用精确开发投资口径补取"
+    },
+    {
+      "ref": "W6",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "df52799146bba240b54a740785867c7b",
+      "note": "CFETS DR007黄金；Brent误匹配年度序列无区间数据，国内10年利率S0059749无权限，均未补值或宣称已取到"
+    },
+    {
+      "ref": "W7",
+      "service": "index_data",
+      "tool": "get_index_kline",
+      "request_id": "32ec7a342e56cf24e5646d1731bc5de5",
+      "note": "000300.SH 1d 2026-09-30至10-15；7行"
+    },
+    {
+      "ref": "W8",
+      "service": "index_data",
+      "tool": "get_index_kline",
+      "request_id": "e65052a694bc6f40f84530da6126be73",
+      "note": "HSI.HI 1d 相同区间；11行"
+    },
+    {
+      "ref": "W10欧洲及地产",
+      "service": "economic_data",
+      "tool": "query_economic_indicator_data",
+      "request_id": "a7854e1f7a253353714d70607a0a9b92",
+      "note": "S0029657开发投资、A7546569扣除地产民间投资、G0926423 ECB、V1988624核心HICP；总体HICP最新匹配仅到8月，9月按Eurostat官方初值核验"
+    },
+    {
+      "ref": "W9",
+      "service": "financial_docs",
+      "tool": "get_financial_news",
+      "request_id": "1c9c4f4a7798b380bd53d77e823bfec9",
+      "note": "非农发布前9万人预览及结果；预览仅日期无盘中时间；未采用含明显内部矛盾的其他新闻条目"
+    }
+  ],
+  "calculations": [
+    {
+      "series": "沪深300",
+      "start": 4357.62,
+      "end": 4166.01,
+      "change_pct": -4.397125036143579
+    },
+    {
+      "series": "恒生指数",
+      "start": 24613.27,
+      "end": 24062.72,
+      "change_pct": -2.236801530231458
+    },
+    {
+      "series": "美国10年期国债收益率",
+      "start_pct": 5.29,
+      "end_pct": 5.1,
+      "change_bp": -19
+    },
+    {
+      "series": "美元指数",
+      "start": 101.4743,
+      "end": 101.9743,
+      "change_pct": 0.4927355990630211
+    },
+    {
+      "series": "CFETS美元兑人民币报价",
+      "start": 6.7053,
+      "end": 6.6916,
+      "change_pct": -0.20431598884464997
+    },
+    {
+      "series": "DR007",
+      "start_pct": 1.3665,
+      "end_pct": 1.3351,
+      "change_bp": -3.14
+    },
+    {
+      "series": "伦敦金现IDC",
+      "start": 4157.41,
+      "end": 4170.68,
+      "change_pct": 0.31918911052795096
+    }
+  ],
+  "review": {
+    "independent_reviewers": [
+      "report_review",
+      "external_check"
+    ],
+    "issues_resolved": [
+      "美国核心CPI同比与环比区别",
+      "美国CPI发布结果与预期交易区别",
+      "实体人民币贷款不能代表民企融资",
+      "PPI第二预测来源定位",
+      "统计局日程网页显示日期与URL不同",
+      "FOMC夏令时换算",
+      "房地产开发投资与行业固定投资口径区别"
+    ],
+    "remaining_limits": [
+      "一致预期未锁定完整发布前快照",
+      "Wind可得版本不是历史首发数据库",
+      "没有严格控制其他因素的事件因果检验",
+      "行业敏感度与情景为未回测的分析假设"
+    ]
+  },
+  "scope": "未改变项目宏观框架基线，未使用docs/imports候选材料，未写入invest-lab或invest-sources，未提交Git",
+  "output": "experiments/cn/2026-10-macro-report/reports/2026年10月中国市场与外部宏观环境分析报告-wind.docx",
+  "completion_note": "报告交付完成；数据版本、预测快照和因果识别限制已在正文披露",
+  "artifact_verification": {
+    "page_count": 11,
+    "sections": 9,
+    "tables": 7,
+    "sources": 25,
+    "all_pages_reviewed": true,
+    "content_checks": "passed",
+    "bytes": 55330,
+    "sha256": "8d5a2e5783926eeb21c710f01db56e0be0d0abab6915d36cb5b17306fc191d26",
+    "qa_summary": "qa_summary.json"
+  },
+  "relocation": "2026-10-16 自 runs/2026-10-china-macro-report/ 迁入；render/ 移到 out/render/（不入库，可用 build_report.py --render-dir 重建）；font-cache/ 与 fontconfig.xml 已删除，改为渲染时在 out/ 下生成"
+}

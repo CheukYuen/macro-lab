@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "document": "experiments/cn/2026-10-macro-report/reports/2026年10月中国市场与外部宏观环境分析报告-wind.docx",
+  "document_sha256": "8d5a2e5783926eeb21c710f01db56e0be0d0abab6915d36cb5b17306fc191d26",
+  "content_sha256": "2e8d923452939b2ca2b178717aca5dba6b005d5c8d86b0d3ba9344874658ad70",
+  "pages": 11,
+  "main_sections": 9,
+  "tables": 7,
+  "sources": 25,
+  "content_checks": "All reviewed body paragraphs, bullets, table cells and source identifiers match the latest JSON; CPI monthly structure, credit definitions and corrected schedule details are included.",
+  "renderer": "/Users/leon/.codex/plugins/cache/openai-primary-runtime/documents/26.1013.11914/skills/documents/render_docx.py",
+  "libreoffice": "/Users/leon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "font_setup": "Project-local fontconfig and cache; existing Songti SC and PingFang SC; no system fonts installed.",
+  "visual_checks": [
+    {
+      "page": 1,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 2,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 3,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 4,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 5,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 6,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 7,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 8,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 9,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 10,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    },
+    {
+      "page": 11,
+      "result": "passed",
+      "details": "Chinese glyphs, tables, spacing, margins and page number inspected; no clipping or overlap."
+    }
+  ],
+  "layout_notes": "Table 3 fits completely on page 6; sources S14 and closing statement fit on page 11; continued tables repeat their headers.",
+  "sample_images": [
+    "experiments/cn/2026-10-macro-report/runs/20261016-wind/out/render/page-6.png",
+    "experiments/cn/2026-10-macro-report/runs/20261016-wind/out/render/page-11.png"
+  ]
+}
